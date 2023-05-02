@@ -8,7 +8,7 @@ def highest_bids(bidders_h_all):
     bidders_high = 0
     winner = ""
     for b in bidders_h_all:
-        bid_amount = bidders_h_all[b]
+        bid_amount = bidders_h_all[bidders_high]
         if bid_amount > bidders_high:
             bidders_high = bid_amount
             winner = b
