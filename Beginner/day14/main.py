@@ -34,8 +34,8 @@ while game:
     ans = check(guess, a_fc, b_fc)
     if ans:
         score += 1
-        print(f"correct {score}")
+        print(f"correct! your current score is {score}")
     else:
 
-        print(f"wrong {score}")
+        print(f"Awwn wrong  but your highscore was{score}")
         game = False
