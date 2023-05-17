@@ -16,7 +16,7 @@ def spiro(n):
     for m in range(int(360 / n)):
         miracle.color(r_color())
         miracle.circle(120)
-        miracle.setheading(miracle.heading() + 5)
+        miracle.setheading(miracle.heading() + n)
 spiro(5)
 dont_go = turtle.Screen()
 dont_go.exitonclick()
