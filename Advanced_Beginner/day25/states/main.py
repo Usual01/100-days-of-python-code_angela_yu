@@ -18,6 +18,15 @@ guessed_states = []
 # turtle.mainloop()
 while len(guessed_states) < 50:
     answer_state = screen.textinput(title=f"{len(guessed_states)}/50 were correct", prompt = "What's another state?").title()
+    if answer_state == "Exit":
+        missing_states = []
+        for states in all_states:
+            if states not in guessed_states:
+                missing_states.append(states)
+        new_data = pandas.DataFrame(missing_states)
+        new_data.to_csv("remaining_states.csv")
+
+        break
 
     if answer_state in all_states:
         guessed_states.append(answer_state)
