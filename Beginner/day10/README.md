@@ -1,0 +1,1 @@
+We are taught how to use functions with arguments
