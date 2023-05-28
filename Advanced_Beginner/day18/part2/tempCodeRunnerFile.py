@@ -1,0 +1,1 @@
+miracle.forward(50)

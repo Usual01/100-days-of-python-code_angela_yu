@@ -23,14 +23,18 @@ color_codes = [(25, 240, 228), (47, 231, 241), (25, 234, 244), (29, 245, 235),
     (201, 94, 74), (14, 37, 25), (55, 35, 19), (55, 23, 38), 
     (229, 175, 166), (180, 186, 217), (56, 156, 176), (84, 154, 113)]
 
-
+def ten():
+    for a in range(10):
+        miracle.forward(50)
+        miracle.dot(20, random.choice(color_codes))
+        
 miracle.setheading(225)
 miracle.penup()
 miracle.hideturtle()
 miracle.forward(350)
 miracle.setheading(0)
 
-for m in range(1, 101):
+for m in range(1, 51):
     miracle.dot(20, random.choice(color_codes))
     miracle.forward(50)
 
@@ -38,8 +42,11 @@ for m in range(1, 101):
         miracle.setheading(90)
         miracle.forward(50)
         miracle.setheading(180)
-        miracle.forward(500)
+        ten()
+        miracle.setheading(90)
+        miracle.forward(50)
         miracle.setheading(0)
+        
 
 
 dont_go = turtle.Screen()
