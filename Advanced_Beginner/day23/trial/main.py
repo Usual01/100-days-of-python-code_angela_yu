@@ -22,5 +22,12 @@ while game:
     car.create_car()
     car.move_cars()
 
-    
+    for c in car.all_cars:
+        if c.distance(player) < 20:
+            game = False
+
+        if player.is_at_finish():
+            player.go_to_start()
+            car.level_up()
+
 screen.exitonclick()
