@@ -14,7 +14,7 @@ for item in menu:
 
 for item in menu:
     
-    #quantity = quantities[item]
+    quantity = quantities[item]
     cost = menu[item] * quantity
     total += cost
     print(f"Cost of {quantity} {item}(s): {cost}")
