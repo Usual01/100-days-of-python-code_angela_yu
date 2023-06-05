@@ -1,6 +1,5 @@
 print("Welcome to pizza deliveries")
 size = input("What size of pizza do you want? S, M, or L?")
-
 bill = 0
 if size == "s":
     bill += 15
