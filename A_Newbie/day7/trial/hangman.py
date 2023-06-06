@@ -14,5 +14,7 @@ for a in range(len(choice)):
     letter = choice[a]
     if letter == user_word:
         display[a] = letter
+
+man = ' '.join(display)
+print(f"{man}")
         
-print(display)
