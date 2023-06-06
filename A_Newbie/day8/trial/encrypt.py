@@ -6,8 +6,8 @@ word = input("Enter the word\t").upper()
 shift_number = int(input("Enter shift amout"))
 
 coded_word = ''
-for l in range(len(word)):
-    position = letters[l]
+for l in word:
+    position = letters.index(l)
     new_position = position + shift_number
     c_word = letters[new_position]
     coded_word += c_word
