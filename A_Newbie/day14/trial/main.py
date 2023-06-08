@@ -15,8 +15,10 @@ def check(guess, a_f_c, b_f_c):
 
 score = 0
 should_continue = True
+acc_b = random.choice(data)
+
 while should_continue:
-    acc_a = random.choice(data)
+    acc_a = acc_b
     acc_b = random.choice(data)
     if acc_a == acc_b:
         acc_b = random.choice(data)
