@@ -68,7 +68,7 @@ def playgame():
                 user_cards.append(deal_card())
             else:
                 game = True
-    while computer_score != 0 and computer_score < 17:
+        while computer_score != 0 and computer_score < 17:
             computer_cards.append(deal_card())
             computer_score = calculate_score(computer_cards)
     print(f"your{user_cards}, final score{user_score} and computer is {computer_score}\n")
