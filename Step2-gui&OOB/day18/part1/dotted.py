@@ -1,6 +1,6 @@
 from turtle import Turtle, Screen
 
-miracle = Turtle()
+miracle = Turtle() 
 def draw():
     for m in range(5):
         miracle.forward(10)
